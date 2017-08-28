@@ -62,7 +62,7 @@ function getCountyInfo(countyName){
     hispanic = "31.6";
   }
   else{
-    var data = fs.readFileSync("Data/County\ Data/" + countyName + ".html", "utf8");
+    var data = fs.readFileSync("Data/County\ Data/" + countyName + ".txt", "utf8");
     var lines = data.split("\n");
 
     percapitaincome = lines[50].replace(/<[^>]*>/gi, "").replace(/,/gi, "").replace("$", ""); //per capita income on the 51st line
@@ -108,7 +108,7 @@ function getCountyInfo(countyName){
 }
 
 //Add population data (data from https://en.wikipedia.org/wiki/List_of_counties_in_California)
-var data = fs.readFileSync("Data/wikipedia_cleaned.html", 'utf8');
+var data = fs.readFileSync("Data/wikipedia_cleaned.txt", 'utf8');
 var lines = data.split("\n");
 
 function getPopulation(i){
