@@ -1,0 +1,14 @@
+{
+  "name": "civil-asset-forfeiture",
+  "version": "1.0.0",
+  "description": "Data visualization describing cases of civil asset forfeiture in California",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Jeffrey Shen",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "pdf-text": "^0.4.0",
+    "pdf-to-text": "0.0.6"
+  }
+}

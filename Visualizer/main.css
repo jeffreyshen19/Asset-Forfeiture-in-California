@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "Didact";
+  src: url("Assets/DidactGothic.ttf");
+}
+
+@font-face {
+  font-family: "Francois";
+  src: url("Assets/FrancoisOne.ttf");
+}
+
+body{
+  padding: 20px;
+}
+
+path {
+  stroke-width: 1px;
+
+  cursor: pointer;
+}
+
+#wrapper path{
+  stroke: white;
+}
+
+#wrapper{
+  border: 1px solid #6C7A89;
+  width: 517px;
+  height: 600px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  border-right: none;
+}
+
+#pieChart{
+  margin: 0 auto;
+}
+
+div.tooltip {
+  position: relative;
+  display: inline-block;
+  color: black;
+  padding: 10px;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-family: "Didact";
+  height: 600px;
+  width: 517px;
+  vertical-align: top;
+  background-color: #F2F1EF;
+  margin-left: -4px;
+  border: 1px solid #6C7A89;
+  border-left: none;
+}
+
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+strong{
+  font-family: "Francois";
+  font-size: 20px;
+}
+
+h1{
+  font-family: "Francois";
+  margin: 0 0 4px;
+  padding: 0;
+  font-size: 24px;
+}
+
+p{
+  font-family: "Didact";
+  font-size: 16px;
+}
+
+#resizemessage{
+  margin: 0 auto;
+  padding: 0;
+  text-align:  center;
+}
+
+#resizemessage h1{
+  margin-top: 45vh;
+  padding: 0;
+}

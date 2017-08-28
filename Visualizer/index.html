@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Civil asset forfeiture data visualization">
+  <meta name="author" content="Jeffrey Shen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Civil Asset Forfeiture Data Visualization</title>
+
+  <link href = "./main.css" type = "text/css" rel = "stylesheet">
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://d3js.org/d3.v4.min.js"></script>
+  <script type="text/javascript" src="./d3pie.min.js"></script>
+</head>
+<body>
+  <div id = "body">
+    <h1>Civil Asset Forfeitures in California in 2016</h1>
+    <p>
+      A data visualization project showing <a href = "https://en.wikipedia.org/wiki/Civil_forfeiture_in_the_United_States">civil asset forfeiture</a> by county in California, along with relevant economic and demographic information.
+      <br>
+      <br>
+      <i>How to use this:</i> Hover over each county to see its civil forfeiture statistics and demographics. Click on a county for a full log of all civil asset forfeitures. The map is sorted by color, so the counties that seize more assets per capita are more red. You can also pan and zoom on the map.
+      <br>
+      <br>
+      <i>Notes:</i> All data on civil asset forfeiture was collected from the <a href = "https://oag.ca.gov/sites/all/files/agweb/pdfs/publications/asset_forf/2016-af/2016-af.pdf" >2016 California Asset Forfeiture Report</a>, and data on demographics was collected from Wikipedia. Some counties (in gray) did not choose to participate in the Asset Forfeiture Report, so there is no data on them. <b>In the spirit of transparency</b>, all the code I used to create this visualization is available <a>here</a>.
+      <br>
+      <br>
+      <i>Created by <a href = "http://jeffreyshen.com">Jeffrey Shen</a>.</i>
+    </p>
+    <div id = "wrapper">
+    </div>
+    <div id = "tooltip" class = "tooltip">
+      <div id = "textbox"></div>
+      <div id = "pieChart"></div>
+    </div>
+  </div>
+  <div id = "resizemessage" hidden>
+    <h1>Oops! This site doesn't work on mobile yet.</h1>
+  </div>
+  <script type="text/javascript" src="./visualizer.js"></script>
+</body>
+</html>
